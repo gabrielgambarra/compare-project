@@ -5,9 +5,58 @@
         <div class="container">
           <h1 class="title">{{ heading }}</h1>
           <div class="is-two-thirds column is-paddingless">
-            <h2 class="subtitle">{{ subheading }}</h2>
+            <h2 class="subtitle is-4">{{ subheading }}</h2>
           </div>
-          <a href="" class="button is-large is-primary" id="learn">Learn more</a>
+          <a class="button is-large is-primary" id="learn">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns pd is-desktop">
+          <div class="column is-1 has-text-centered">
+            <i class="fa fa-cog is-primary"></i>
+          </div>
+          <div class="column is-one-third-desktop">
+            <p class="title">
+              <strong>We provide superior logistics so that your business can succeed in a crazy world.</strong>
+            </p>
+          </div>
+          <div class="column">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns pd">
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <p class="title">“There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.”</p>
+              <p class="subtitle">Jeff Atwood</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <p
+                class="title"
+              >“There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.”</p>
+              <p class="subtitle">Jeff Atwood</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <p
+                class="title"
+              >“There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.”</p>
+              <p class="subtitle">Jeff Atwood</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -19,9 +68,10 @@ export default {
   name: "home",
   data() {
     return {
-      heading: 'Soaring to new heights',
-      subheading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-    }
+      heading: "Soaring to new heights",
+      subheading:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    };
   }
 };
 </script>
@@ -45,4 +95,15 @@ export default {
 
 h2
   margin: 1.5rem 0 2rem 0 !important
+
+.fa-cog
+  font-size: 40px
+
+#learn
+  +desktop
+    margin-bottom: 2rem
+
+.pd
+  padding: 2em 0
+
 </style>
