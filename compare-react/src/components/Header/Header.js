@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// Statefull
 
 class Header extends Component {
   render() {
